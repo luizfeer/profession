@@ -6,14 +6,14 @@ Veja este [exemplo](https://codepen.io/luizalmeida7/pen/RwarYmo) em Vue.Js!
 ## Estrutura
 Código e nome da profissão.
 ```json
-code: 1,  name: 'Engenheiro(a)'
+  code: 1,  name: 'Engenheiro(a)'
 ```
 
 ## Exportando com outras variáveis
 ```javascript
 const  profissoesFormated  =  PROFISSOES.map(v  => ({
-	text:  v.name,
-	value:  v.code
+  text:  v.name,
+  value:  v.code
 }))
 export  default  profissoesFormated
 ```
@@ -21,15 +21,15 @@ export  default  profissoesFormated
 ```html
 
 <label>
-	<span >Profissão:</span>
-	<select  v-model="profession">
-		<option
-		v-for="option in profissoesFormated"
-		:key="option.value"
-		:value="option.text"
-		>
-			{{ option.text }}
-		</option>
-	</select>
+  <span >Profissão:</span>
+  <select  v-model="profession">
+    <option
+    v-for="option in profissoesFormated"
+    :key="option.value"
+    :value="option.text"
+    >
+      {{ option.text }}
+    </option>
+  </select>
 </label>
 ```
