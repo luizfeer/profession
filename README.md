@@ -2,7 +2,7 @@
 
 Para acelerar formulários que necessitam das profissões em português, em JS para uso em autocomplete, select e etc.
 
-
+Veja este [exemplo](https://codepen.io/luizalmeida7/pen/RwarYmo) em Vue.Js!
 ## Estrutura
 Código e nome da profissão.
 ```json
@@ -21,7 +21,7 @@ export  default  profissoesFormated
 ```html
 
 <label>
-	<span >Estado</span>
+	<span >Profissão:</span>
 	<select  v-model="profession">
 		<option
 		v-for="option in profissoesFormated"
