@@ -364,9 +364,3 @@ export const PROFISSOES = [
   { code: 390, name: 'Web Designer' },
   { code: 54, name: 'Zootécnico(a)' }
 ]
-
-const profissoesSelect = PROFISSOES.map(v => ({
-  text: v.name,
-  value: v.code
-}))
-export default profissoesSelect
